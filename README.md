@@ -72,8 +72,3 @@ python -m source_db.seed_source_db --simulate-daily-changes
 
 Transaksi (mobile banking, ATM, dll) sifatnya high-volume dan event-driven — nunggu jadwal batch harian gak realistis buat use case fraud detection/monitoring saldo real-time. Itu di-handle terpisah lewat **Kafka streaming** (belum dibangun di repo ini — langkah selanjutnya).
 
-## Langkah selanjutnya
-
-1. **Kafka**: producer simulasi transaksi real-time + consumer yang landing ke Bronze (partitioned by day)
-2. **Silver layer**: PII masking (hash `nik`), data quality checks (referential integrity, rekonsiliasi debit=kredit)
-3. **Gold layer**: star schema untuk dashboard NPL & customer segmentation
