@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment / secrets
+.env
+
+# Airflow / project runtime output (regenerate via source_db/seed_source_db.py + main.py)
+logs/
+output/
+plugins/
+*.db
+
+# OS
+.DS_Store

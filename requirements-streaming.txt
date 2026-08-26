@@ -1,0 +1,7 @@
+faker>=24.0
+pandas>=2.0
+kafka-python
+boto3
+sqlalchemy
+psycopg2-binary
+pyarrow
